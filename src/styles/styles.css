@@ -3,11 +3,103 @@
   --font-logo: "Raleway", serif;
   --color-text-logo: #000000 --;
   --color-text-hoover: #2196f3;
-  --color-text-secendary: #ffffff;
+  --color-text-secondary: #ffffff;
   --color-text-primary: #757575;
   --color-text-title: #212121;
   --color-text-info: #ffffff99;
-  --color-bg-product: #ececec;
+  --color-bg-product: #eeeeee;
   --color-bg-primary: #2f303a;
   --color-bg-secondary: #f5f4fa;
+}
+body {
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.header-logo {
+  font-family: var(--font-logo);
+  color: var(--color-text-hoover);
+}
+.nav {
+  background-color: var(--color-bg-secondary);
+  font-weight: 500;
+  color: var(--color-text-title);
+}
+.nav:hover {
+  color: var(--color-text-hoover);
+}
+.header-contacts {
+  font-weight: 500;
+}
+.header-contacts:hover {
+  color: var(--color-text-hoover);
+}
+.hero {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+  font-size: 44px;
+  line-height: 1.4;
+  font-weight: 900;
+}
+.hero-button {
+  background-color: var(--color-text-hoover);
+  color: var(--color-bg-secondary);
+}
+.advantages-title {
+  color: var(--color-text-title);
+}
+.work-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text-title);
+}
+.team-title {
+  font-weight: 700;
+  color: var(--color-text-title);
+  font-size: 36px;
+}
+.teammate-name {
+  color: var(--color-text-title);
+  font-weight: 500;
+  font-size: 16px;
+}
+.teammate-role {
+  font-size: 16px;
+}
+.team {
+  background-color: var(--color-bg-secondary);
+}
+.teammate {
+  background-color: var(--color-text-secondary);
+}
+.footer-link {
+  font-family: var(--font-logo);
+  color: var(--color-text-hoover);
+}
+.footer-text {
+  color: var(--color-text-secondary);
+}
+.logo {
+  color: var(--color-text-title);
+}
+.footer-logo {
+  color: var(--color-text-secondary);
+}
+.footer {
+  background-color: var(--color-bg-primary);
+}
+.product-name {
+  line-height: 2;
+  font-size: 18;
+  color: var(--color-text-title);
+  font-weight: 700;
+}
+.nav-link {
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--color-text-title);
+  font-weight: 500;
 }

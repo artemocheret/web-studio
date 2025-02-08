@@ -18,17 +18,11 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
-
-.header-logo {
-  font-family: var(--font-logo);
-  color: var(--color-text-hoover);
-}
 .nav {
-  background-color: var(--color-bg-secondary);
   font-weight: 500;
   color: var(--color-text-title);
 }
-.nav:hover {
+.nav-link:hover {
   color: var(--color-text-hoover);
 }
 .header-contacts {
@@ -38,23 +32,23 @@ body {
   color: var(--color-text-hoover);
 }
 .hero {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-secondary);
-  font-size: 44px;
-  line-height: 1.4;
+  width: 1600px;
+  height: 600px;
+  background: var(--color-bg-primary);
+}
+.hero-title {
+  font-family: var(--font-primary);
   font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-text-secondary);
 }
 .hero-button {
   background-color: var(--color-text-hoover);
   color: var(--color-bg-secondary);
-}
-.advantages-title {
-  color: var(--color-text-title);
-}
-.work-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--color-text-title);
 }
 .team-title {
   font-weight: 700;
@@ -82,9 +76,6 @@ body {
 .footer-text {
   color: var(--color-text-secondary);
 }
-.logo {
-  color: var(--color-text-title);
-}
 .footer-logo {
   color: var(--color-text-secondary);
 }
@@ -102,4 +93,41 @@ body {
   font-size: 16px;
   color: var(--color-text-title);
   font-weight: 500;
+}
+.advantages-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-title);
+}
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-text-title);
+}
+.hero-button {
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--color-text-hoover);
+}
+.logo {
+  color: var(--color-bg-primary);
+}
+.header-logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--color-text-hoover);
 }

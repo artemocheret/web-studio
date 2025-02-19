@@ -13,6 +13,8 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 button {
   outline: 0;

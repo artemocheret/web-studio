@@ -18,12 +18,19 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
+.container {
+  max-width: 1200px;
+}
 .nav {
   font-weight: 500;
   color: var(--color-text-title);
 }
 .nav-link:hover {
   color: var(--color-text-hoover);
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .header-contacts {
   font-weight: 500;
@@ -33,6 +40,8 @@ body {
 }
 .hero {
   background: var(--color-bg-primary);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-family: var(--font-primary);
@@ -63,6 +72,8 @@ body {
 }
 .team {
   background-color: var(--color-bg-secondary);
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 .teammate {
   background-color: var(--color-text-secondary);
@@ -79,6 +90,8 @@ body {
 }
 .footer {
   background-color: var(--color-bg-primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .product-name {
   line-height: 2;
@@ -91,6 +104,10 @@ body {
   font-size: 16px;
   color: var(--color-text-title);
   font-weight: 500;
+}
+.advantages {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 .advantages-text {
   font-weight: 400;

@@ -20,6 +20,10 @@ body {
 }
 .container {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .nav {
   font-weight: 500;
@@ -78,6 +82,11 @@ body {
 .teammate {
   background-color: var(--color-text-secondary);
 }
+.footer {
+  background-color: var(--color-bg-primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-link {
   font-family: var(--font-logo);
   color: var(--color-text-hoover);
@@ -87,11 +96,6 @@ body {
 }
 .footer-logo {
   color: var(--color-text-secondary);
-}
-.footer {
-  background-color: var(--color-bg-primary);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .product-name {
   line-height: 2;
@@ -122,6 +126,9 @@ body {
   text-transform: uppercase;
   color: var(--color-text-title);
 }
+.work {
+  padding-bottom: 95px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -143,4 +150,8 @@ body {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--color-text-hoover);
+}
+.portfolio {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }

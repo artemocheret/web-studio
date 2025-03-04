@@ -29,6 +29,11 @@ body {
   font-weight: 500;
   color: var(--color-text-title);
 }
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
 .nav-link:hover {
   color: var(--color-text-hoover);
 }
@@ -36,8 +41,15 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .header-contacts {
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 .header-contacts:hover {
   color: var(--color-text-hoover);
@@ -46,6 +58,11 @@ body {
   background: var(--color-bg-primary);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   font-family: var(--font-primary);
@@ -56,15 +73,25 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--color-text-secondary);
+  margin-bottom: 30px;
 }
 .hero-button {
   background-color: var(--color-text-hoover);
   color: var(--color-bg-secondary);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .team-title {
   font-weight: 700;
   color: var(--color-text-title);
   font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.teammate-img {
+  padding-bottom: 30px;
 }
 .teammate-name {
   color: var(--color-text-title);
@@ -73,11 +100,16 @@ body {
 }
 .teammate-role {
   font-size: 16px;
+  padding-bottom: 30px;
 }
 .team {
   background-color: var(--color-bg-secondary);
   padding-top: 95px;
   padding-bottom: 95px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 .teammate {
   background-color: var(--color-text-secondary);
@@ -113,6 +145,10 @@ body {
   padding-top: 95px;
   padding-bottom: 95px;
 }
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
 .advantages-text {
   font-weight: 400;
   font-size: 14px;
@@ -129,12 +165,17 @@ body {
 .work {
   padding-bottom: 95px;
 }
+.work-list {
+  display: flex;
+  gap: 30px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-text-title);
+  margin-bottom: 50px;
 }
 .hero-button {
   border-radius: 4px;

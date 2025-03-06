@@ -63,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 .hero-title {
   font-family: var(--font-primary);
@@ -82,6 +83,10 @@ body {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 .team-title {
   font-weight: 700;
@@ -90,17 +95,19 @@ body {
   margin-bottom: 50px;
   text-align: center;
 }
-.teammate-img {
-  padding-bottom: 30px;
+.teammate-photo {
+  margin-bottom: 30px;
 }
 .teammate-name {
   color: var(--color-text-title);
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
 }
 .teammate-role {
   font-size: 16px;
   padding-bottom: 30px;
+  text-align: center;
 }
 .team {
   background-color: var(--color-bg-secondary);
@@ -122,9 +129,15 @@ body {
 .footer-link {
   font-family: var(--font-logo);
   color: var(--color-text-hoover);
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+.footer-item {
+  color: var(--color-text-info);
 }
 .footer-text {
   color: var(--color-text-secondary);
+  margin-bottom: 9px;
 }
 .footer-logo {
   color: var(--color-text-secondary);

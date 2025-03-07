@@ -40,6 +40,7 @@ body {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  align-items: center;
 }
 .header-container {
   display: flex;
@@ -74,7 +75,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--color-text-secondary);
-  margin-bottom: 30px;
 }
 .hero-button {
   background-color: var(--color-text-hoover);
@@ -120,6 +120,7 @@ body {
 }
 .teammate {
   background-color: var(--color-text-secondary);
+  margin-bottom: 30px;
 }
 .footer {
   background-color: var(--color-bg-primary);
@@ -129,6 +130,7 @@ body {
 .footer-link {
   font-family: var(--font-logo);
   color: var(--color-text-hoover);
+  display: block;
   margin-bottom: 20px;
   font-size: 26px;
 }

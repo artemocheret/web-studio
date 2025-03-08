@@ -40,11 +40,11 @@ body {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  align-items: center;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-contacts {
   font-weight: 500;

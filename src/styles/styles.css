@@ -211,3 +211,26 @@ body {
   padding-top: 95px;
   padding-bottom: 95px;
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.portfolio-item {
+  max-width: 370px;
+}
+.filter-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.filter-button:hover {
+  background-color: var(--color-text-hoover);
+  color: var(--color-text-secondary);
+}
+.filter-button {
+  padding: 6px 25px;
+}

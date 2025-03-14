@@ -75,6 +75,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--color-text-secondary);
+  max-width: 696px;
 }
 .hero-button {
   background-color: var(--color-text-hoover);

@@ -118,6 +118,7 @@ body {
 .team-list {
   display: flex;
   gap: 30px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 .teammate {
   background-color: var(--color-text-secondary);
@@ -164,6 +165,7 @@ body {
 .advantages-list {
   display: flex;
   gap: 30px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 .advantages-text {
   font-weight: 400;
@@ -184,6 +186,7 @@ body {
 .work-list {
   display: flex;
   gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .work-title {
   font-weight: 700;
@@ -227,6 +230,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
+  flex-basis: calc((100% - 16px) / 3);
 }
 .filter-button:hover {
   background-color: var(--color-text-hoover);

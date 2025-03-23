@@ -28,10 +28,10 @@ body {
 .nav {
   font-weight: 500;
   color: var(--color-text-title);
+  flex-grow: 1;
 }
 .nav-list {
   display: flex;
-  justify-content: space-between;
   gap: 50px;
 }
 .nav-link:hover {
@@ -43,8 +43,8 @@ body {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 93px;
 }
 .header-contacts {
   font-weight: 500;

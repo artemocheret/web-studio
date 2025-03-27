@@ -165,6 +165,8 @@ body {
 .advantages-list {
   display: flex;
   gap: 30px;
+}
+.advantages-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 .advantages-item::before {

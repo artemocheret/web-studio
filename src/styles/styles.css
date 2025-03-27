@@ -167,6 +167,29 @@ body {
   gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
+.advantages-item {
+}
+.advantages-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: var(--color-bg-secondary);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-image: url(../img/antenna.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../img/clock.svg);
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../img/diagram.svg);
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../img/astronaut.svg);
+}
 .advantages-text {
   font-weight: 400;
   font-size: 14px;

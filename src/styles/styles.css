@@ -220,6 +220,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
+  flex-basis: calc((100% - 16px) / 3);
 }
 .portfolio-item {
   max-width: 370px;
@@ -230,7 +231,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
-  flex-basis: calc((100% - 16px) / 3);
 }
 .filter-button:hover {
   background-color: var(--color-text-hoover);

@@ -220,10 +220,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
-  flex-basis: calc((100% - 16px) / 3);
 }
 .portfolio-item {
-  max-width: 370px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .filter-list {
   display: flex;

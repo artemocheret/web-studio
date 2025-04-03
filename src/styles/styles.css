@@ -120,13 +120,11 @@ body {
   gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
-.team-item {
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
 .teammate {
   background-color: var(--color-text-secondary);
   margin-bottom: 30px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .footer {
   background-color: var(--color-bg-primary);
@@ -251,7 +249,7 @@ body {
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.portfolio-item:hover {
+.product:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }

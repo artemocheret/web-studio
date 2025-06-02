@@ -52,9 +52,28 @@ body {
   justify-content: space-between;
   gap: 50px;
 }
-.header-contacts:hover {
-  color: var(--color-text-hoover);
+
+.header-contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.header-contacts-link:hover {
+  color: var(--color-text-hoover);
+  fill: var(--color-text-hoover);
+}
+
+.header-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.header-tel {
+  width: 10px;
+  height: 16px;
+}
+
 .hero {
   background: var(--color-bg-primary);
   padding-top: 200px;
@@ -135,6 +154,49 @@ body {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+
+.regularcustomers {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-text-title);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.customers-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.customers-icon {
+  fill: #afb1b8;
+}
+
+.customers-item:hover {
+  color: var(--color-text-hoover);
+}
+
+.customers-link:hover .customers-icon {
+  fill: var(--color-text-hoover);
+}
+
 .footer {
   background-color: var(--color-bg-primary);
   padding-top: 60px;

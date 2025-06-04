@@ -6,7 +6,7 @@
   --color-text-secondary: #ffffff;
   --color-text-primary: #757575;
   --color-text-title: #212121;
-  --color-text-info: #ffffff99;
+  --color-text-info: rgba(255, 255, 255, 0.1);
   --color-bg-product: #eeeeee;
   --color-bg-primary: #2f303a;
   --color-bg-secondary: #f5f4fa;
@@ -229,7 +229,7 @@ body {
   border-radius: 4px;
 }
 
-.customers-link:hover .customers-icon {
+.customers-item:hover .customers-icon {
   fill: var(--color-text-hoover);
 }
 
@@ -238,7 +238,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-link {
+.footer-logo {
   font-family: var(--font-logo);
   color: var(--color-text-hoover);
   display: block;
@@ -248,19 +248,58 @@ body {
 .footer-item {
   color: var(--color-text-info);
 }
+
+.footer-gmail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-text {
   color: var(--color-text-secondary);
   margin-bottom: 9px;
 }
-.footer-logo {
+.footer-studio {
   color: var(--color-text-secondary);
 }
+
+.footer-title {
+  color: var(--color-text-secondary);
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icon {
+  fill: var(--color-text-secondary);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-link {
+  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 0px solid black;
+  background-color: var(--color-text-info);
+  border-radius: 50%;
+}
+
+.footer-link:hover {
+  background-color: var(--color-text-hoover);
+}
+
 .product-name {
   line-height: 2;
   font-size: 18;
   color: var(--color-text-title);
   font-weight: 700;
 }
+
 .nav-link {
   line-height: 1.6;
   font-size: 16px;

@@ -233,6 +233,11 @@ body {
   fill: var(--color-text-hoover);
 }
 
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+
 .footer {
   background-color: var(--color-bg-primary);
   padding-top: 60px;
@@ -269,8 +274,16 @@ body {
   color: var(--color-text-secondary);
 }
 
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .footer-icons {
   display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .footer-icon {

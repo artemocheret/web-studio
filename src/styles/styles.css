@@ -384,6 +384,29 @@ body {
   gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
+
+.work-item {
+  position: relative;
+}
+
+.work-img {
+  display: block;
+}
+
+.work-div {
+  background-color: rgba(50, 47, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.work-subtitle {
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding-top: 25px;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;

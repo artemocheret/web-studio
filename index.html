@@ -61,7 +61,45 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <form class="hero-form">
+                <button class="btn-close" data-modal-close>
+                  <a href="#" class="form-link">
+                    <svg class="form-icon">
+                      <use href="./src/img/symbol-defs.svg#icon-close" />
+                    </svg>
+                  </a>
+                </button>
+                <h2 class="hero-subtitle">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
+                <div class="hero-field">
+                  <label for="">Ім'я</label>
+                  <input type="text" />
+                </div>
+                <div class="hero-field">
+                  <label for="">Телефон</label>
+                  <input type="text" />
+                </div>
+                <div class="hero-field">
+                  <label for="">Пошта</label>
+                  <input type="text" />
+                </div>
+                <div class="hero-field">
+                  <label for="">Коментар</label>
+                  <input type="text" />
+                </div>
+                <p class="hero-text">
+                  Погоджуюся з розсилкою та приймаю Умови договору
+                </p>
+                <button type="submit" class="form-button">Відправити</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -430,5 +468,6 @@
         </div>
       </div>
     </footer>
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>

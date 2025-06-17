@@ -68,34 +68,50 @@
             <div class="modal">
               <form class="hero-form">
                 <button class="btn-close" data-modal-close>
-                  <a href="#" class="form-link">
-                    <svg class="form-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-close" />
-                    </svg>
-                  </a>
+                  <svg class="form-icon">
+                    <use href="./src/img/symbol-defs.svg#icon-close" />
+                  </svg>
                 </button>
                 <h2 class="hero-subtitle">
                   Залиште свої дані, ми вам передзвонимо
                 </h2>
-                <div class="hero-field">
+                <div class="form-field">
                   <label for="">Ім'я</label>
-                  <input type="text" />
+                  <div class="form-div">
+                    <svg class="form-icon">
+                      <use href="./src/img/symbol-defs.svg#icon-person" />
+                    </svg>
+                    <input type="text" />
+                  </div>
                 </div>
-                <div class="hero-field">
+                <div class="form-field">
                   <label for="">Телефон</label>
-                  <input type="text" />
+                  <div class="form-div">
+                    <svg class="form-icon">
+                      <use href="./src/img/symbol-defs.svg#icon-phone" />
+                    </svg>
+                    <input type="number" />
+                  </div>
                 </div>
-                <div class="hero-field">
-                  <label for="">Пошта</label>
-                  <input type="text" />
+                <div class="form-field">
+                  <label for="email">Пошта</label>
+                  <div class="form-div">
+                    <svg class="form-icon">
+                      <use href="./src/img/symbol-defs.svg#icon-email" />
+                    </svg>
+                    <input name="email" type="email" />
+                  </div>
                 </div>
-                <div class="hero-field">
-                  <label for="">Коментар</label>
-                  <input type="text" />
+                <div class="form-field">
+                  <label for="coment">Коментар</label>
+                  <textarea name="coment" id=""></textarea>
                 </div>
-                <p class="hero-text">
-                  Погоджуюся з розсилкою та приймаю Умови договору
-                </p>
+                <div class="form-field">
+                  <input type="checkbox" />
+                  <p class="form-text">
+                    Погоджуюся з розсилкою та приймаю Умови договору
+                  </p>
+                </div>
                 <button type="submit" class="form-button">Відправити</button>
               </form>
             </div>

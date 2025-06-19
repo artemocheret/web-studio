@@ -68,48 +68,64 @@
             <div class="modal">
               <form class="hero-form">
                 <button class="btn-close" data-modal-close>
-                  <svg class="form-icon">
-                    <use href="./src/img/symbol-defs.svg#icon-close" />
-                  </svg>
+                  <a href="#" class="form-close">
+                    <svg class="form-icon">
+                      <use href="./src/img/symbol-defs.svg#icon-close" />
+                    </svg>
+                  </a>
                 </button>
                 <h2 class="hero-subtitle">
                   Залиште свої дані, ми вам передзвонимо
                 </h2>
                 <div class="form-field">
-                  <label for="">Ім'я</label>
-                  <div class="form-div">
-                    <svg class="form-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-person" />
-                    </svg>
-                    <input type="text" />
+                  <label class="form-label" for="">Ім'я</label>
+                  <div class="form-div focus-8">
+                    <a href="#" class="form-link">
+                      <svg class="form-icon">
+                        <use href="./src/img/symbol-defs.svg#icon-person" />
+                      </svg>
+                    </a>
+                    <input class="form-input" type="text" />
                   </div>
                 </div>
                 <div class="form-field">
-                  <label for="">Телефон</label>
-                  <div class="form-div">
-                    <svg class="form-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-phone" />
-                    </svg>
-                    <input type="number" />
+                  <label class="form-label" for="">Телефон</label>
+                  <div class="form-div focus-8">
+                    <a href="#" class="form-link">
+                      <svg class="form-icon">
+                        <use href="./src/img/symbol-defs.svg#icon-phone" />
+                      </svg>
+                    </a>
+                    <input class="form-input" type="tel" />
                   </div>
                 </div>
                 <div class="form-field">
-                  <label for="email">Пошта</label>
-                  <div class="form-div">
-                    <svg class="form-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-email" />
-                    </svg>
-                    <input name="email" type="email" />
+                  <label class="form-label" for="email">Пошта</label>
+                  <div class="form-div focus-8">
+                    <a href="#" class="form-link">
+                      <svg class="form-icon">
+                        <use href="./src/img/symbol-defs.svg#icon-email" />
+                      </svg>
+                    </a>
+                    <input class="form-input" name="email" type="email" />
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="coment">Коментар</label>
-                  <textarea name="coment" id=""></textarea>
+                <div class="form-field focus-8">
+                  <label class="form-label" for="comment">Коментар</label>
+                  <div class="form-textarea">
+                    <textarea
+                      class="textarea"
+                      placeholder="Введіть текст"
+                      name="comment"
+                      id="comment"
+                    ></textarea>
+                  </div>
                 </div>
-                <div class="form-field">
-                  <input type="checkbox" />
-                  <p class="form-text">
-                    Погоджуюся з розсилкою та приймаю Умови договору
+                <div class="agree">
+                  <input class="agree-input" type="checkbox" />
+                  <p class="agree-text">
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="agree-link" href="#">Умови договору</a>
                   </p>
                 </div>
                 <button type="submit" class="form-button">Відправити</button>
@@ -482,6 +498,18 @@
             </ul>
           </div>
         </div>
+        <form class="footer-form">
+          <div class="footer-email">
+            <label class="footer-label" for="">Підпишіться на розсилку</label>
+            <input class="footer-input" type="email" placeholder="E-mail" />
+          </div>
+          <button class="footer-button">
+            Підписатися
+            <svg class="footer-icon">
+              <use href="./src/img/symbol-defs.svg#icon-send" />
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./src/js/index.js" type="module"></script>

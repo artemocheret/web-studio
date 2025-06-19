@@ -303,6 +303,40 @@ body {
   height: 20px;
 }
 
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.footer-label {
+  color: var(--color-bg-secondary);
+  padding-bottom: 20px;
+  display: block;
+}
+
+.footer-input {
+  background-color: var(--color-bg-primary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+}
+
+.footer-button {
+  background-color: var(--color-text-hoover);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  align-items: center;
+}
+
 .footer-link {
   display: block;
   width: 44px;
@@ -479,6 +513,10 @@ body {
   top: 8px;
 }
 
+.btn-close:hover {
+  fill: var(--color-text-hoover);
+}
+
 .form-icon {
   width: 18px;
   height: 18px;
@@ -488,6 +526,7 @@ body {
   text-align: center;
   color: var(--color-text-title);
   padding-bottom: 12px;
+  padding-top: 32px;
 }
 
 .form-button {
@@ -504,6 +543,7 @@ body {
 .backdrop {
   position: fixed;
   inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
@@ -518,14 +558,99 @@ body {
   min-height: 581px;
   top: 50%;
   left: 50%;
+  border: 0px solid black;
+  border-radius: 4px;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.form-label {
+  padding-bottom: 4px;
+}
+
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.textarea {
+  border: none;
+  width: 416px;
+  height: 96px;
+}
+
+.form-textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.form-textarea:hover {
+  border: 1px solid var(--color-text-hoover);
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 30px;
+}
+
+.agree-input:checked {
+  background-color: var(--color-text-hoover);
+}
+
+.agree-link {
+  color: var(--color-text-hoover);
+  text-decoration: underline;
+}
+
+.form-field {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-div {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  gap: -20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: flex;
+  width: 448px;
+  height: 40px;
+}
+
+.form-div:focus {
+  border: 1px solid var(--color-text-hoover);
+}
+
+.form-div:focus .form-icon {
+  fill: var(--color-text-hoover);
+}
+
+.form-div:hover {
+  border: 1px solid var(--color-text-hoover);
+}
+
+.form-div:hover .form-icon {
+  fill: var(--color-text-hoover);
+}
+
+.form-link {
+  padding-left: 12px;
+  display: flex;
+}
+
+.form-input {
+  border: none;
 }
 
 .backdrop-button {

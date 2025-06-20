@@ -526,7 +526,7 @@ body {
   text-align: center;
   color: var(--color-text-title);
   padding-bottom: 12px;
-  padding-top: 32px;
+  padding-top: 30px;
 }
 
 .form-button {
@@ -647,6 +647,7 @@ body {
 .form-link {
   padding-left: 12px;
   display: flex;
+  padding-right: 12px;
 }
 
 .form-input {

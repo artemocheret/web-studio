@@ -247,6 +247,7 @@ body {
 .footer-container {
   display: flex;
   gap: 70px;
+  align-items: flex-start;
 }
 
 .footer {
@@ -254,6 +255,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   font-family: var(--font-logo);
   color: var(--color-text-hoover);
@@ -335,6 +337,7 @@ body {
   font-size: 16px;
   color: var(--color-text-secondary);
   align-items: center;
+  line-height: 1.875;
 }
 
 .footer-link {
@@ -513,7 +516,7 @@ body {
   top: 8px;
 }
 
-.btn-close:hover {
+.btn-close:hover .form-icon {
   fill: var(--color-text-hoover);
 }
 
@@ -575,7 +578,6 @@ body {
 }
 
 .textarea {
-  border: none;
   width: 416px;
   height: 96px;
 }
@@ -592,6 +594,10 @@ body {
 }
 
 .form-textarea:hover {
+  border: 1px solid var(--color-text-hoover);
+}
+
+.form-textarea:focus-within {
   border: 1px solid var(--color-text-hoover);
 }
 
@@ -628,8 +634,12 @@ body {
   height: 40px;
 }
 
-.form-div:focus {
+.form-div:focus-within {
   border: 1px solid var(--color-text-hoover);
+}
+
+.form-div:focus-within .form-icon {
+  fill: var(--color-text-hoover);
 }
 
 .form-div:focus .form-icon {
@@ -648,10 +658,6 @@ body {
   padding-left: 12px;
   display: flex;
   padding-right: 12px;
-}
-
-.form-input {
-  border: none;
 }
 
 .backdrop-button {

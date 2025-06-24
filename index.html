@@ -86,6 +86,7 @@
                       </svg>
                     </a>
                     <input
+                      required
                       name="name"
                       id="name"
                       class="form-input"
@@ -101,7 +102,12 @@
                         <use href="./src/img/symbol-defs.svg#icon-phone" />
                       </svg>
                     </a>
-                    <input name="tel" id="tel" class="form-input" type="tel" />
+                    <input
+                      required="tel"
+                      id="tel"
+                      class="form-input"
+                      type="tel"
+                    />
                   </div>
                 </div>
                 <div class="form-field">
@@ -113,6 +119,7 @@
                       </svg>
                     </a>
                     <input
+                      required
                       class="form-input"
                       name="email"
                       id="email"
@@ -510,8 +517,16 @@
         </div>
         <form class="footer-form">
           <div class="footer-email">
-            <label class="footer-label" for="">Підпишіться на розсилку</label>
-            <input class="footer-input" type="email" placeholder="E-mail" />
+            <label class="footer-label" for="E-mail"
+              >Підпишіться на розсилку</label
+            >
+            <input
+              class="footer-input"
+              name="E-mail"
+              id="E-mail"
+              type="email"
+              placeholder="E-mail"
+            />
           </div>
           <button class="footer-button">
             Підписатися

@@ -541,6 +541,7 @@ body {
   border-radius: 4px;
   color: var(--color-text-secondary);
   font-size: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .backdrop {
@@ -577,20 +578,17 @@ body {
   flex-grow: 1;
 }
 
-.textarea {
-  width: 416px;
-  height: 96px;
-}
-
 .form-textarea {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-bottom: 20px;
+  padding-top: 12px;
+  padding-left: 16px;
 }
 
 .form-textarea:hover {
@@ -658,6 +656,10 @@ body {
   padding-left: 12px;
   display: flex;
   padding-right: 12px;
+}
+
+.form-input {
+  height: 16px;
 }
 
 .backdrop-button {

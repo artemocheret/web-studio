@@ -27,19 +27,44 @@ body {
   padding-right: 15px;
 }
 .nav {
-  font-weight: 500;
-  color: var(--color-text-title);
   flex-grow: 1;
 }
 .nav-list {
   display: flex;
   gap: 50px;
 }
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  color: var(--color-text-title);
+  line-height: 1.14;
+}
+
 .nav-link:hover {
   color: var(--color-text-hoover);
 }
+
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-text-hoover);
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
+  border: 0px solid black;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
 .header {
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 25px;
 }
 .header-container {
@@ -361,14 +386,15 @@ body {
   font-size: 18;
   color: var(--color-text-title);
   font-weight: 700;
+  padding-bottom: 4px;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
-.nav-link {
-  line-height: 1.6;
-  font-size: 16px;
-  color: var(--color-text-title);
-  font-weight: 500;
+.product-category {
+  padding-left: 24px;
 }
+
 .advantages {
   padding-top: 95px;
   padding-bottom: 95px;
@@ -466,6 +492,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--color-text-hoover);
 }
 .portfolio {
@@ -485,6 +512,7 @@ body {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
+
 .filter-list {
   display: flex;
   gap: 8px;
@@ -501,6 +529,36 @@ body {
 .filter-button {
   padding: 6px 25px;
   border-radius: 4px;
+}
+
+.product {
+  height: 404px;
+}
+
+.product-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 1s ease;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+}
+
+.product:hover .product-text {
+  transform: translateY(0);
 }
 
 .btn-close {

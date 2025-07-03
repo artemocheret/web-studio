@@ -22,12 +22,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="container header-container">
         <a class="header-logo" href="#">Web<span class="logo">Studio</span></a>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Студія </a>
+              <a class="nav-link" href="./index.html">Студія </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./src/pages/portfolio.html"
@@ -40,12 +40,18 @@
         <ul class="header-contacts">
           <li class="header-contacts-item">
             <a class="header-contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg class="header-icon">
+                <use href="./src/img/icons.svg#icon-envelope" />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="header-contacts-item">
-            <a class="header-contacts-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="header-contacts-link" href="tel:+380961111111">
+              <svg class="header-tel">
+                <use href="./src/img/icons.svg#icon-smartphone" />
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>

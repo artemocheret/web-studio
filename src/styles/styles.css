@@ -39,6 +39,9 @@ body {
   font-weight: 500;
   color: var(--color-text-title);
   line-height: 1.14;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .nav-link:hover {
@@ -57,6 +60,8 @@ body {
   border: 0px solid black;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .nav-link:hover::after {
@@ -83,6 +88,9 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .header-contacts-link:hover {
@@ -180,6 +188,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .teammate-icon {
@@ -251,22 +262,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: color, fill, border, border-radius;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.customers-link:hover {
+  color: var(--color-text-hoover);
+  border: 1px solid var(--color-text-hoover);
+  border-radius: 4px;
+}
+
+.customers-link:hover .customers-icon {
+  fill: var(--color-text-hoover);
 }
 
 .customers-icon {
   fill: #afb1b8;
   width: 106px;
   height: 60px;
-}
-
-.customers-item:hover {
-  color: var(--color-text-hoover);
-  border: 1px solid var(--color-text-hoover);
-  border-radius: 4px;
-}
-
-.customers-item:hover .customers-icon {
-  fill: var(--color-text-hoover);
 }
 
 .footer-container {
@@ -375,6 +389,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .footer-link:hover {
@@ -520,15 +537,20 @@ body {
   justify-content: center;
   margin-bottom: 34px;
 }
+
+.filter-button {
+  padding: 6px 25px;
+  border-radius: 4px;
+  transition-property: background-color, color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
 .filter-button:hover {
   background-color: var(--color-text-hoover);
   color: var(--color-text-secondary);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
-}
-.filter-button {
-  padding: 6px 25px;
-  border-radius: 4px;
 }
 
 .product {
@@ -552,9 +574,11 @@ body {
   padding-right: 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
-  transition: transform 1s ease;
   color: var(--color-text-secondary);
   font-size: 18px;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .product:hover .product-text {

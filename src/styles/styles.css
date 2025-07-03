@@ -281,6 +281,9 @@ body {
   fill: #afb1b8;
   width: 106px;
   height: 60px;
+   transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .footer-container {
@@ -596,6 +599,9 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .btn-close:hover .form-icon {
@@ -605,6 +611,9 @@ body {
 .form-icon {
   width: 18px;
   height: 18px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .hero-subtitle {
@@ -671,6 +680,9 @@ body {
   padding-bottom: 20px;
   padding-top: 12px;
   padding-left: 16px;
+  transition-property: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .form-textarea:hover {
@@ -712,6 +724,9 @@ body {
   display: flex;
   width: 448px;
   height: 40px;
+  transition-property: fill, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .form-div:focus-within {

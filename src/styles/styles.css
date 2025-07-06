@@ -39,7 +39,7 @@ body {
   font-weight: 500;
   color: var(--color-text-title);
   line-height: 1.14;
-  transition-property: color;
+  transition-property: color ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -60,6 +60,7 @@ body {
   border: 0px solid black;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  transition-property: transform, opacity ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -96,17 +97,31 @@ body {
 
 .header-contacts-link:hover {
   color: var(--color-text-hoover);
+}
+
+.header-contacts-link:hover .header-icon {
+  fill: var(--color-text-hoover);
+}
+.header-contacts-link:hover .header-tel {
   fill: var(--color-text-hoover);
 }
 
 .header-icon {
   width: 16px;
   height: 12px;
+  fill: var(--color-text-primary);
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .header-tel {
   width: 10px;
   height: 16px;
+  fill: var(--color-text-primary);
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .hero {
@@ -189,7 +204,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -198,6 +213,9 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .teammate-link:hover {
@@ -263,7 +281,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: color, fill, border, border-radius;
+  transition-property: color, border, border-radius;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -282,7 +300,7 @@ body {
   fill: #afb1b8;
   width: 106px;
   height: 60px;
-   transition-property: fill;
+  transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -404,7 +422,7 @@ body {
 
 .product-name {
   line-height: 2;
-  font-size: 18;
+  font-size: 18px;
   color: var(--color-text-title);
   font-weight: 700;
   padding-bottom: 4px;
@@ -600,22 +618,13 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .btn-close:hover .form-icon {
   fill: var(--color-text-hoover);
 }
 
-.form-icon {
-  width: 18px;
-  height: 18px;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
+
 
 .hero-subtitle {
   text-align: center;
@@ -725,7 +734,15 @@ body {
   display: flex;
   width: 448px;
   height: 40px;
-  transition-property: fill, border;
+  transition-property: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+  transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }

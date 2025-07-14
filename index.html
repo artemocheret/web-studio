@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/styles.css" />
   </head>
@@ -154,27 +155,27 @@
       <section class="advantages">
         <div class="container advantages-container">
           <ul class="advantages-list">
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-left">
               <h3 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantages-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-left" data-aos-delay="100">
               <h3 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantages-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-left" data-aos-delay="200">
               <h3 class="advantages-title">ПЛАНУВАННЯ</h3>
               <p class="advantages-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-left" data-aos-delay="300">
               <h3 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantages-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -188,7 +189,7 @@
         <div class="container work-container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li class="work-item">
+            <li class="work-item" data-aos="fade-right">
               <img
                 class="work-img"
                 src="./src/img/programming.webp"
@@ -198,13 +199,13 @@
                 <h3 class="work-subtitle">Десктопні додатки</h3>
               </div>
             </li>
-            <li class="work-item">
+            <li class="work-item" data-aos="fade-right" data-aos-delay="100">
               <img class="work-img" src="./src/img/laptop.webp" alt="ноутбук" />
               <div class="work-div">
                 <h3 class="work-subtitle">Мобільні додатки</h3>
               </div>
             </li>
-            <li class="work-item">
+            <li class="work-item" data-aos="fade-right" data-aos-delay="200">
               <img class="work-img" src="./src/img/tablet.webp" alt="планшет" />
               <div class="work-div">
                 <h3 class="work-subtitle">Дизайнерські рішення</h3>
@@ -217,7 +218,7 @@
         <div class="container team-container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -264,7 +265,7 @@
                 </div>
               </article>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -311,7 +312,7 @@
                 </div>
               </article>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -358,7 +359,7 @@
                 </div>
               </article>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -537,6 +538,10 @@
         </form>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./src/js/index.js" type="module"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

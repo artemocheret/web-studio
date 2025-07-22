@@ -1,0 +1,13 @@
+.portfolio {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
+}

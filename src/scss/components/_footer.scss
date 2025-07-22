@@ -1,0 +1,114 @@
+.footer-container {
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.footer {
+  background-color: var(--color-bg-primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: var(--font-logo);
+  color: var(--color-text-hoover);
+  display: block;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+.footer-item {
+  color: var(--color-text-info);
+}
+
+.footer-gmail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text {
+  color: var(--color-text-secondary);
+  margin-bottom: 9px;
+}
+.footer-studio {
+  color: var(--color-text-secondary);
+}
+
+.footer-title {
+  color: var(--color-text-secondary);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-icon {
+  fill: var(--color-text-secondary);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.footer-label {
+  color: var(--color-bg-secondary);
+  padding-bottom: 20px;
+  display: block;
+}
+
+.footer-input {
+  background-color: var(--color-bg-primary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+}
+
+.footer-button {
+  background-color: var(--color-text-hoover);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  align-items: center;
+  line-height: 1.875;
+}
+
+.footer-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 0px solid black;
+  background-color: var(--color-text-info);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.footer-link:hover {
+  background-color: var(--color-text-hoover);
+}

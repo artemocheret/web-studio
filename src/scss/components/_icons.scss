@@ -1,0 +1,16 @@
+.teammate-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.teammate-link:hover {
+  background-color: var(--color-text-hoover);
+}
+
+.teammate-link:hover .teammate-icon {
+  fill: var(--color-text-secondary);
+}

@@ -20,26 +20,6 @@
   text-align: center;
 }
 
-.teammate-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.teammate-link {
-  border: 0px solid black;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
 .team {
   background-color: var(--color-bg-secondary);
   padding-top: 95px;

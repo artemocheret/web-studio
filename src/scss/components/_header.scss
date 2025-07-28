@@ -1,12 +1,12 @@
 .nav {
   flex-grow: 1;
 }
-.nav-list {
+.nav__list {
   display: flex;
   gap: 50px;
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   font-weight: 500;
   color: var(--color-text-title);
@@ -16,11 +16,11 @@
   transition-duration: 250ms;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   color: var(--color-text-hoover);
 }
 
-.nav-link::after {
+.nav__link::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -37,7 +37,7 @@
   transition-duration: 250ms;
 }
 
-.nav-link:hover::after {
+.nav__link:hover::after {
   transform: rotateY(-180deg);
   opacity: 1;
 }
@@ -46,19 +46,19 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   gap: 93px;
 }
-.header-contacts {
+.header__contacts {
   font-weight: 500;
   display: flex;
   justify-content: space-between;
   gap: 50px;
 }
 
-.header-contacts-link {
+.header__contacts--link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -67,18 +67,18 @@
   transition-duration: 250ms;
 }
 
-.header-contacts-link:hover {
+.header__contacts--link:hover {
   color: var(--color-text-hoover);
 }
 
-.header-contacts-link:hover .header-icon {
+.header__contacts--link:hover .header__icon {
   fill: var(--color-text-hoover);
 }
-.header-contacts-link:hover .header-tel {
+.header__contacts--link:hover .header__tel {
   fill: var(--color-text-hoover);
 }
 
-.header-icon {
+.header__icon {
   width: 16px;
   height: 12px;
   fill: var(--color-text-primary);
@@ -87,7 +87,7 @@
   transition-duration: 250ms;
 }
 
-.header-tel {
+.header__tel {
   width: 10px;
   height: 16px;
   fill: var(--color-text-primary);
@@ -99,7 +99,7 @@
 .logo {
   color: var(--color-bg-primary);
 }
-.header-logo {
+.header__logo {
   font-family: var(--font-logo);
   font-weight: 700;
   font-size: 26px;

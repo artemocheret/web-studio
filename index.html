@@ -23,33 +23,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a class="header-logo" href="#">Web<span class="logo">Studio</span></a>
+      <div class="container header__container">
+        <a class="header__logo" href="#">Web<span class="logo">Studio</span></a>
         <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Студія </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./src/pages/portfolio.html"
+            <li class="nav__item">
+              <a class="nav__link" href="./src/pages/portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts-item">
-            <a class="header-contacts-link" href="mailto:info@devstudio.com"
-              ><svg class="header-icon">
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <a class="header__contacts--link" href="mailto:info@devstudio.com"
+              ><svg class="header__icon">
                 <use href="./src/img/icons.svg#icon-envelope" />
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts-item">
-            <a class="header-contacts-link" href="tel:+380961111111">
-              <svg class="header-tel">
+          <li class="header__contacts--item">
+            <a class="header__contacts--link" href="tel:+380961111111">
+              <svg class="header__tel">
                 <use href="./src/img/icons.svg#icon-smartphone" />
               </svg>
               +38 096 111 11 11</a
@@ -60,29 +60,29 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button" data-modal-open>
+        <div class="container hero__container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form class="hero-form">
-                <button class="btn-close" data-modal-close>
-                  <a href="#" class="form-close">
-                    <svg class="form-icon">
+              <form class="hero__form">
+                <button class="btn__close" data-modal-close>
+                  <a href="#" class="form__close">
+                    <svg class="form__icon">
                       <use href="./src/img/symbol-defs.svg#icon-close" />
                     </svg>
                   </a>
                 </button>
-                <h2 class="hero-subtitle">
+                <h2 class="hero__subtitle">
                   Залиште свої дані, ми вам передзвонимо
                 </h2>
-                <div class="form-field">
-                  <label class="form-label" for="name">Ім'я</label>
-                  <div class="form-div focus-8">
-                    <a href="#" class="form-link">
-                      <svg class="form-icon">
+                <div class="form__field">
+                  <label class="form__label" for="name">Ім'я</label>
+                  <div class="form__div">
+                    <a href="#" class="form__link">
+                      <svg class="form__icon">
                         <use href="./src/img/symbol-defs.svg#icon-person" />
                       </svg>
                     </a>
@@ -95,11 +95,11 @@
                     />
                   </div>
                 </div>
-                <div class="form-field">
-                  <label class="form-label" for="tel">Телефон</label>
-                  <div class="form-div focus-8">
-                    <a href="#" class="form-link">
-                      <svg class="form-icon">
+                <div class="form__field">
+                  <label class="form__label" for="tel">Телефон</label>
+                  <div class="form__div focus-8">
+                    <a href="#" class="form__link">
+                      <svg class="form__icon">
                         <use href="./src/img/symbol-defs.svg#icon-phone" />
                       </svg>
                     </a>
@@ -111,26 +111,26 @@
                     />
                   </div>
                 </div>
-                <div class="form-field">
-                  <label class="form-label" for="email">Пошта</label>
-                  <div class="form-div focus-8">
-                    <a href="#" class="form-link">
-                      <svg class="form-icon">
+                <div class="form__field">
+                  <label class="form__label" for="email">Пошта</label>
+                  <div class="form__div focus-8">
+                    <a href="#" class="form__link">
+                      <svg class="form__icon">
                         <use href="./src/img/symbol-defs.svg#icon-email" />
                       </svg>
                     </a>
                     <input
                       required
-                      class="form-input"
+                      class="form__input"
                       name="email"
                       id="email"
                       type="email"
                     />
                   </div>
                 </div>
-                <div class="form-field focus-8">
-                  <label class="form-label" for="comment">Коментар</label>
-                  <div class="form-textarea">
+                <div class="form__field">
+                  <label class="form__label" for="comment">Коментар</label>
+                  <div class="form__textarea">
                     <textarea
                       class="textarea"
                       placeholder="Введіть текст"
@@ -140,13 +140,13 @@
                   </div>
                 </div>
                 <div class="agree">
-                  <input class="agree-input" type="checkbox" />
-                  <p class="agree-text">
+                  <input class="agree__input" type="checkbox" />
+                  <p class="agree__text">
                     Погоджуюся з розсилкою та приймаю
-                    <a class="agree-link" href="#">Умови договору</a>
+                    <a class="agree__link" href="#">Умови договору</a>
                   </p>
                 </div>
-                <button type="submit" class="form-button">Відправити</button>
+                <button type="submit" class="form__button">Відправити</button>
               </form>
             </div>
           </div>

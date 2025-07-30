@@ -1,35 +1,25 @@
-.team-title {
+.team__title {
   font-weight: 700;
   color: var(--color-text-title);
   font-size: 36px;
   margin-bottom: 50px;
   text-align: center;
 }
-.teammate-photo {
+.teammate__photo {
   margin-bottom: 30px;
 }
-.teammate-name {
+.teammate__name {
   color: var(--color-text-title);
   font-weight: 500;
   font-size: 16px;
   text-align: center;
 }
-.teammate-role {
+.teammate__role {
   font-size: 16px;
   padding-bottom: 30px;
   text-align: center;
 }
 
-.team {
-  background-color: var(--color-bg-secondary);
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-.team-list {
-  display: flex;
-  gap: 30px;
-  flex-basis: calc((100% - 90px) / 4);
-}
 .teammate {
   background-color: var(--color-text-secondary);
   margin-bottom: 30px;

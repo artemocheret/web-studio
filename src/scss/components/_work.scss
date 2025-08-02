@@ -1,7 +1,6 @@
-
-
-.work__item {
+.list__item--work {
   position: relative;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .work__img {
@@ -20,13 +19,4 @@
   color: var(--color-text-secondary);
   text-align: center;
   padding-top: 25px;
-}
-
-.work__title {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--color-text-title);
-  margin-bottom: 50px;
 }

@@ -1,0 +1,27 @@
+.button {
+  background-color: var(--color-text-hoover);
+  color: var(--color-text-secondary);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form--button {
+  padding-right: 52px;
+  padding-left: 52px;
+}
+
+.footer--button {
+  padding-left: 28px;
+  padding-right: 28px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}

@@ -24,7 +24,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="header__logo" href="#">Web<span class="logo">Studio</span></a>
+        <a class="logo" href="#">Web<span class="logo__part">Studio</span></a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -38,18 +38,18 @@
             <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header__contacts">
-          <li class="header__contacts-item">
-            <a class="header__contacts--link" href="mailto:info@devstudio.com"
-              ><svg class="header__icon">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon">
                 <use href="./src/img/icons.svg#icon-envelope" />
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header__contacts--item">
-            <a class="header__contacts--link" href="tel:+380961111111">
-              <svg class="header__tel">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__tel">
                 <use href="./src/img/icons.svg#icon-smartphone" />
               </svg>
               +38 096 111 11 11</a
@@ -62,7 +62,7 @@
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button" type="button" data-modal-open>
+          <button class="button" type="button" data-modal-open>
             Замовити послугу
           </button>
           <div class="backdrop is-hidden" data-modal>
@@ -146,7 +146,7 @@
                     <a class="agree__link" href="#">Умови договору</a>
                   </p>
                 </div>
-                <button type="submit" class="form__button">Відправити</button>
+                <button type="submit" class="button form--button">Відправити</button>
               </form>
             </div>
           </div>
@@ -156,7 +156,7 @@
         <div class="container advantages__container">
           <ul class="list">
             <li class="advantages__item" data-aos="fade-left">
-              <h3 class="advantages__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="list__title advantages--title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantages__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -187,9 +187,9 @@
       </section>
       <section class="section">
         <div class="container work__container">
-          <h2 class="work__title">Чим ми займаємося</h2>
-          <ul class="list work--list">
-            <li class="work__item" data-aos="fade-right">
+          <h2 class="list__title">Чим ми займаємося</h2>
+          <ul class="list">
+            <li class="list__item--work" data-aos="fade-right">
               <img
                 class="work__img"
                 src="./src/img/programming.webp"
@@ -214,11 +214,11 @@
           </ul>
         </div>
       </section>
-      <section class="section team--section">
+      <section class="section section--team">
         <div class="container team__container">
-          <h2 class="team__title">Наша команда</h2>
-          <ul class="list team--list">
-            <li class="team__item" data-aos="zoom-in">
+          <h2 class="list__title">Наша команда</h2>
+          <ul class="list">
+            <li class="list__item--team" data-aos="zoom-in">
               <article class="teammate">
                 <div class="teammate__photo">
                   <img
@@ -323,7 +323,7 @@
                     height="260"
                   />
                 </div>
-                <h3 class="teammate-name">Микола Тарасов</h3>
+                <h3 class="teammate__name">Микола Тарасов</h3>
                 <p class="teammate__role">Marketing</p>
                 <div class="social__icons">
                   <ul class="social__list">
@@ -411,7 +411,7 @@
       </section>
       <section class="section">
         <div class="container customers__container">
-          <h2 class="customers__title">Постійні клієнти</h2>
+          <h2 class="list__title">Постійні клієнти</h2>
           <ul class="list customers--list">
             <li class="customers__item">
               <a href="#" class="customers__link">
@@ -462,8 +462,8 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__info">
-          <a class="footer__logo" href="#"
-            >Web<span class="footer__stuudio">Studio</span></a
+          <a class="logo" href="#"
+            >Web<span class="logo__part logo__part--white">Studio</span></a
           >
           <address class="address">
             <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -529,7 +529,7 @@
               placeholder="E-mail"
             />
           </div>
-          <button class="footer__button">
+          <button class="button footer--button">
             Підписатися
             <svg class="footer__icon">
               <use href="./src/img/symbol-defs.svg#icon-send" />

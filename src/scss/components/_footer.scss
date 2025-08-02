@@ -10,13 +10,6 @@
   padding-bottom: 60px;
 }
 
-.footer__logo {
-  font-family: var(--font-logo);
-  color: var(--color-text-hoover);
-  display: block;
-  margin-bottom: 20px;
-  font-size: 26px;
-}
 .footer__item {
   color: var(--color-text-info);
 }
@@ -32,9 +25,6 @@
 .footer__text {
   color: var(--color-text-secondary);
   margin-bottom: 9px;
-}
-.footer__studio {
-  color: var(--color-text-secondary);
 }
 
 .footer__title {
@@ -77,21 +67,6 @@
   border-radius: 4px;
   width: 358px;
   height: 50px;
-}
-
-.footer__button {
-  background-color: var(--color-text-hoover);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 28px;
-  border-radius: 4px;
-  display: flex;
-  gap: 10px;
-  font-size: 16px;
-  color: var(--color-text-secondary);
-  align-items: center;
-  line-height: 1.875;
 }
 
 .footer__link {

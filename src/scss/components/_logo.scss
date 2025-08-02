@@ -1,0 +1,15 @@
+.logo__part {
+  color: var(--color-text-logo);
+}
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--color-text-hoover);
+}
+
+.logo__part--white {
+    color: var(--color-text-secondary);
+}

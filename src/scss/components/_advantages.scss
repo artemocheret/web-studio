@@ -22,6 +22,12 @@
 .advantages__item:nth-child(4)::before {
   background-image: url(../img/astronaut.svg);
 }
+
+.advantages__title {
+  color: var(--color-text-title);
+  margin-bottom: 10px;
+}
+
 .advantages__text {
   font-weight: 400;
   font-size: 14px;

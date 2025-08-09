@@ -9,9 +9,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  transition-property: color, fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (color,fill);
 }
 
 .contacts__link:hover {
@@ -29,16 +27,12 @@
   width: 16px;
   height: 12px;
   fill: var(--color-text-primary);
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
-.contacts__tel {
+.contacts__icon--tel {
   width: 10px;
   height: 16px;
   fill: var(--color-text-primary);
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (fill);
 }

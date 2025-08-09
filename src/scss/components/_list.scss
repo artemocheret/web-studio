@@ -4,7 +4,6 @@
 }
 
 .customers--list {
-  align-items: center;
-  justify-content: center;
+  @extend %center-flex;
   flex-wrap: wrap;
 }

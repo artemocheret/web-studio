@@ -2,6 +2,8 @@
 @import "./global/reset";
 @import "./global/global";
 @import "./components/container";
+@import "../scss/utils/mixin";
+@import "../scss/utils/placeholder";
 @import "./components/logo";
 @import "./components/button";
 @import "./components/nav";

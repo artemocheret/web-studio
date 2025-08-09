@@ -11,9 +11,7 @@
   font-weight: 500;
   color: var(--color-text-title);
   line-height: 1.14;
-  transition-property: color ;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (color);
 }
 
 .nav__link:hover {
@@ -32,9 +30,7 @@
   border: 0px solid black;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  transition-property: transform, opacity ;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (transform, opacity);
 }
 
 .nav__link:hover::after {

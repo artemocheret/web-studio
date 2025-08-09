@@ -73,21 +73,10 @@ body {
   padding-right: 15px;
 }
 
-.logo__part {
-  color: var(--color-text-logo);
-}
-
-.logo {
-  font-family: var(--font-logo);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  line-height: 1.19;
-  color: var(--color-text-hoover);
-}
-
-.logo__part--white {
-  color: var(--color-text-secondary);
+.footer__link, .customers__link, .social__list, .social__link, .customers--list, .agree, .header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -105,7 +94,24 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.form__button {
+.logo__part {
+  color: var(--color-text-logo);
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--color-text-hoover);
+}
+
+.logo__part--white {
+  color: var(--color-text-secondary);
+}
+
+.form--button {
   padding-right: 52px;
   padding-left: 52px;
 }
@@ -133,8 +139,8 @@ body {
   color: var(--color-text-title);
   line-height: 1.14;
   transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link:hover {
@@ -154,8 +160,8 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   transition-property: transform, opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link:hover::after {
@@ -169,8 +175,6 @@ body {
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
   gap: 93px;
 }
 
@@ -186,8 +190,8 @@ body {
   align-items: center;
   gap: 10px;
   transition-property: color, fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:hover {
@@ -206,18 +210,15 @@ body {
   width: 16px;
   height: 12px;
   fill: var(--color-text-primary);
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
-.contacts__tel {
+.contacts__icon--tel {
   width: 10px;
   height: 16px;
   fill: var(--color-text-primary);
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -278,7 +279,9 @@ body {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -300,7 +303,9 @@ body {
   border: 0px solid black;
   border-radius: 4px;
   transform: translateX(-50%) translateY(-50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .no__scroll {
@@ -330,8 +335,8 @@ body {
   padding-top: 12px;
   padding-left: 16px;
   transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__textarea:hover {
@@ -343,9 +348,6 @@ body {
 }
 
 .agree {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
   margin-bottom: 30px;
@@ -371,20 +373,19 @@ body {
   align-items: center;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  display: flex;
   width: 448px;
   height: 40px;
   transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__icon {
   width: 18px;
   height: 18px;
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__div:focus-within {
@@ -432,11 +433,6 @@ body {
   margin-bottom: 50px;
 }
 
-.advantages--title {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .advantages__item {
   flex-basis: calc((100% - 90px) / 4);
 }
@@ -466,6 +462,11 @@ body {
   background-image: url(../img/astronaut.svg);
 }
 
+.advantages__title {
+  color: var(--color-text-title);
+  margin-bottom: 10px;
+}
+
 .advantages__text {
   font-weight: 400;
   font-size: 14px;
@@ -478,6 +479,10 @@ body {
   padding-bottom: 95px;
 }
 
+.advantages--section {
+  padding-top: 95px;
+}
+
 .section--team {
   background-color: var(--color-bg-secondary);
 }
@@ -488,8 +493,6 @@ body {
 }
 
 .customers--list {
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -549,27 +552,17 @@ body {
   height: 20px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__link {
-  border: 0px solid black;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -594,20 +587,13 @@ body {
   border-radius: 4px;
   padding-top: 16px;
   padding-bottom: 16px;
-  display: block;
+  transition-property: color, border, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers__item {
   flex-basis: calc((100% - 150px) / 6);
-}
-
-.customers__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: color, border, border-radius;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .customers__link:hover {
@@ -625,8 +611,8 @@ body {
   width: 106px;
   height: 60px;
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
@@ -648,17 +634,15 @@ body {
 .filter-list {
   display: flex;
   gap: 8px;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 34px;
 }
 
 .filter-button {
   padding: 6px 25px;
   border-radius: 4px;
-  transition-property: background-color, color, box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover {
@@ -709,8 +693,8 @@ body {
   color: var(--color-text-secondary);
   font-size: 18px;
   transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product:hover .product-text {
@@ -795,12 +779,9 @@ body {
   border: 0px solid black;
   background-color: var(--color-text-info);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__link:hover {

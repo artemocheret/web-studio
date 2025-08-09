@@ -20,9 +20,7 @@
   padding-bottom: 20px;
   padding-top: 12px;
   padding-left: 16px;
-  transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (border);
 }
 
 .form__textarea:hover {
@@ -34,9 +32,7 @@
 }
 
 .agree {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %center-flex;
   column-gap: 8px;
   margin-bottom: 30px;
 }
@@ -61,20 +57,15 @@
   align-items: center;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  display: flex;
   width: 448px;
   height: 40px;
-  transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (border);
 }
 
 .form__icon {
   width: 18px;
   height: 18px;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (fill);
 }
 
 .form__div:focus-within {

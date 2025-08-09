@@ -40,9 +40,7 @@
   transform: translateY(101%);
   color: var(--color-text-secondary);
   font-size: 18px;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition-set (transform);
 }
 
 .product:hover .product-text {

@@ -1,4 +1,20 @@
-% {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+%center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%button {
+  background-color: var(--color-text-hoover);
+  color: var(--color-text-secondary);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }

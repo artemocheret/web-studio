@@ -1,29 +1,15 @@
 .social__icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include social-icons (20px, 20px, #afb1b8);
+  @include transition-set (fill);
 }
 
 .social__link {
-  border: 0px solid black;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @extend %center-flex;
+  @include transition-set (background-color);
 }
 
 .social__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %center-flex;
   gap: 10px;
 }
 

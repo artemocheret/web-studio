@@ -4,7 +4,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin social-icons ($width, $height, $fill...) {
+@mixin icons ($width, $height, $fill) {
    width: $width;
    height: $height;
    fill: $fill;

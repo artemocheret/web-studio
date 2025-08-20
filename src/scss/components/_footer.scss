@@ -1,7 +1,8 @@
 .footer__container {
   display: flex;
   gap: 70px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {
@@ -29,6 +30,7 @@
 
 .footer__title {
   color: var(--color-text-secondary);
+  text-align: center;
 }
 
 .footer__section {
@@ -51,7 +53,8 @@
 
 .footer__form {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 
@@ -59,6 +62,7 @@
   color: var(--color-bg-secondary);
   padding-bottom: 20px;
   display: block;
+  text-align: center;
 }
 
 .footer__input {

@@ -2,7 +2,22 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
+
 .header__container {
   @extend %center-flex ;
   gap: 93px;
+}
+
+.mobile--button {
+  display: none;
+}
+
+@media (max-width:480px) {
+  .nav {
+    display: none;
+  }
+
+  .work__container {
+    display: none;
+  }
 }

@@ -7,3 +7,13 @@
   @extend %center-flex;
   flex-wrap: wrap;
 }
+
+.advantages--list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list--team {
+  display: flex;
+  flex-direction: column;
+}

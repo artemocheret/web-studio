@@ -1,5 +1,6 @@
 .advantages__item {
   flex-basis: calc((100% - 90px) / 4);
+  min-width: 450px;
 }
 .advantages__item::before {
   content: "";
@@ -12,9 +13,10 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
+  flex-grow: 1;
 }
 .advantages___item:nth-child(2)::before {
-  background-image: url(../img/clock.svg);
+  background-image: url(../img/clock.svg)
 }
 .advantages__item:nth-child(3)::before {
   background-image: url(../img/diagram.svg);
@@ -26,6 +28,7 @@
 .advantages__title {
   color: var(--color-text-title);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .advantages__text {
@@ -33,4 +36,5 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
+  text-align: center;
 }

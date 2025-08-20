@@ -4,7 +4,16 @@
 
 .teammate__photo {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.teammate__img {
+  max-width: 450px;
+  height: 460px;
+}
+
 .teammate__name {
   color: var(--color-text-title);
   font-weight: 500;

@@ -189,6 +189,48 @@ body {
   .work__container {
     display: none;
   }
+  .advantages__item {
+    flex-grow: 1;
+  }
+  .advantages__title {
+    text-align: center;
+  }
+  .advantages__text {
+    text-align: center;
+  }
+  .advantages--list {
+    display: flex;
+    flex-direction: column;
+  }
+  .team__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list--team {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__label {
+    text-align: center;
+  }
+  .footer__title {
+    text-align: center;
+  }
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .team__item {
+    max-width: 270px;
+  }
 }
 .contacts {
   font-weight: 500;
@@ -447,7 +489,6 @@ body {
 
 .advantages__item {
   flex-basis: calc((100% - 90px) / 4);
-  min-width: 450px;
 }
 
 .advantages__item::before {
@@ -461,7 +502,6 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
-  flex-grow: 1;
 }
 
 .advantages___item:nth-child(2)::before {
@@ -479,7 +519,6 @@ body {
 .advantages__title {
   color: var(--color-text-title);
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .advantages__text {
@@ -487,7 +526,6 @@ body {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .section {
@@ -512,14 +550,9 @@ body {
   flex-wrap: wrap;
 }
 
-.advantages--list {
-  display: flex;
-  flex-direction: column;
-}
-
 .list--team {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .list__item--work {
@@ -551,14 +584,11 @@ body {
 
 .teammate__photo {
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .teammate__img {
   max-width: 450px;
-  height: 460px;
+  max-height: 460px;
 }
 
 .teammate__name {
@@ -741,14 +771,13 @@ body {
 .footer__container {
   display: flex;
   gap: 70px;
-  flex-direction: column;
-  align-items: center;
 }
 
 .footer {
   background-color: var(--color-bg-primary);
   padding-top: 60px;
   padding-bottom: 60px;
+  flex-grow: 1;
 }
 
 .footer__item {
@@ -770,7 +799,6 @@ body {
 
 .footer__title {
   color: var(--color-text-secondary);
-  text-align: center;
 }
 
 .footer__section {
@@ -793,8 +821,7 @@ body {
 
 .footer__form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 12px;
 }
 
@@ -802,7 +829,6 @@ body {
   color: var(--color-bg-secondary);
   padding-bottom: 20px;
   display: block;
-  text-align: center;
 }
 
 .footer__input {

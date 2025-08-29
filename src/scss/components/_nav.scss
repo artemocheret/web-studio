@@ -37,3 +37,10 @@
   transform: rotateY(-180deg);
   opacity: 1;
 }
+
+
+@media (max-width:767px) {
+  .nav {
+    display: none;
+  }
+}

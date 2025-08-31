@@ -197,6 +197,10 @@ body {
   .header__menu {
     display: none;
   }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .contacts {
   font-weight: 500;
@@ -527,7 +531,15 @@ body {
 @media (min-width: 768px) {
   .advantages__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+  .advantages__text {
+    text-align: start;
+  }
+  .advantages__title {
+    text-align: start;
   }
 }
 .section {
@@ -898,6 +910,20 @@ body {
 @media (min-width: 768px) {
   .footer__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .footer__form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .footer__input {
+    width: 358px;
+  }
+  .footer__label {
+    text-align: start;
+  }
+  .footer__title {
+    text-align: start;
   }
 }

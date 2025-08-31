@@ -49,7 +49,7 @@
 
 .footer__list {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   gap: 10px;
 }
 
@@ -96,10 +96,19 @@
   background-color: var(--color-text-hoover);
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width:769px) {
   .footer__container {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   
   .footer__form {

@@ -4,27 +4,108 @@
 }
 
 .header__container {
-  @extend %center-flex ;
+  @extend %center-flex;
   justify-content: space-between;
   gap: 93px;
 }
 
-.header__menu {
-  width: 40px;
-  height: 40px;
-  background-image: url(../img/menu.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #ECECEC;
-}
-
-@media (min-width:768px) {
-  .header__menu {
-    display: none;
-  }
+@media (min-width: 768px) {
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
   }
 }
 
+.menu-btn {
+  position: relative;
+  display: block;
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+  content: "";
+}
+//верхня, середня та нижня лінії
+.menu-btn::before,
+.menu-btn__line,
+.menu-btn::after {
+  width: 100%;
+  height: 2px;
+  background-color: #030303;
+  position: absolute;
+  left: 0;
+  transition: 0.5s linear;
+  transition-property: top, transform;
+}
+
+// Верхня лінія
+.menu-btn::before {
+  top: 0;
+}
+// Середня лінія
+.menu-btn__line {
+  top: calc(50% - 1px);
+}
+// Нижня лінія
+.menu-btn::after {
+  top: calc(100% - 2px);
+}
+
+.menu-btn.is-open {
+  &::before {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+  .menu-btn__line {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  &::after {
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-menu__wrapp {
+    background-color: rgb(207, 170, 241);
+    position: fixed;
+    inset: 0;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 1s linear;
+  }
+  .mobile-menu__wrapp.is-open {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-menu__wrapp {
+    background-color: rgb(207, 170, 241);
+    position: fixed;
+    inset: 0;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 1s linear;
+  }
+  .mobile-menu__wrapp.is-open {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}

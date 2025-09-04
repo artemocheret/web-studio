@@ -18,30 +18,97 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="#">Web<span class="logo__part">Studio</span></a>
-        <button class="header__menu"></button>
-        <nav class="nav">
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn menu-btn" data-menu-btn>
+            <span class="menu-btn__line"></span>
+          </button>
+          <div class="mobile-menu__wrapp">
+            <nav class="nav" data-menu>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" data-mobile-link href="./index.html"
+                    >Студія
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link"
+                    data-mobile-link
+                    href="./src/pages/portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" data-mobile-link href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts" data-menu>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link"
+                  data-mobile-link
+                  href="mailto:info@devstudio.com"
+                  ><svg class="contacts__icon">
+                    <use href="./src/img/icons.svg#icon-envelope" />
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link"
+                  data-mobile-link
+                  href="tel:+380961111111"
+                >
+                  <svg class="contacts__icon contacts__icon--tel">
+                    <use href="./src/img/icons.svg#icon-smartphone" />
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile__list">
+              <li class="mobile__item">Instagram</li>
+              <li class="mobile__item">Twitter</li>
+              <li class="mobile__item">Facebook</li>
+              <li class="mobile__item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+        <nav class="nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студія </a>
+              <a class="nav__link" data-mobile-link href="./index.html"
+                >Студія
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./src/pages/portfolio.html"
+              <a
+                class="nav__link"
+                data-mobile-link
+                href="./src/pages/portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
+            <li class="nav__item">
+              <a class="nav__link" data-mobile-link href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts">
+        <ul class="contacts" data-menu>
           <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com"
+            <a
+              class="contacts__link"
+              data-mobile-link
+              href="mailto:info@devstudio.com"
               ><svg class="contacts__icon">
                 <use href="./src/img/icons.svg#icon-envelope" />
               </svg>
@@ -49,7 +116,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
+            <a class="contacts__link" data-mobile-link href="tel:+380961111111">
               <svg class="contacts__icon contacts__icon--tel">
                 <use href="./src/img/icons.svg#icon-smartphone" />
               </svg>
@@ -147,7 +214,9 @@
                     <a class="agree__link" href="#">Умови договору</a>
                   </p>
                 </div>
-                <button type="submit" class="button form--button">Відправити</button>
+                <button type="submit" class="button form--button">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
@@ -163,20 +232,32 @@
                 формування позиції.
               </p>
             </li>
-            <li class="advantages__item" data-aos="fade-left" data-aos-delay="100">
+            <li
+              class="advantages__item"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <h3 class="advantages__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantages__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="advantages__item" data-aos="fade-left" data-aos-delay="200">
+            <li
+              class="advantages__item"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <h3 class="advantages__title">ПЛАНУВАННЯ</h3>
               <p class="advantages__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="advantages__item" data-aos="fade-left" data-aos-delay="300">
+            <li
+              class="advantages__item"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               <h3 class="advantages__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantages__text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -201,13 +282,21 @@
               </div>
             </li>
             <li class="work__item" data-aos="fade-right" data-aos-delay="100">
-              <img class="work__img" src="./src/img/laptop.webp" alt="ноутбук" />
+              <img
+                class="work__img"
+                src="./src/img/laptop.webp"
+                alt="ноутбук"
+              />
               <div class="work__div">
                 <h3 class="work__subtitle">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item" data-aos="fade-right" data-aos-delay="200">
-              <img class="work__img" src="./src/img/tablet.webp" alt="планшет" />
+              <img
+                class="work__img"
+                src="./src/img/tablet.webp"
+                alt="планшет"
+              />
               <div class="work__div">
                 <h3 class="work__subtitle">Дизайнерські рішення</h3>
               </div>
@@ -539,6 +628,7 @@
         </form>
       </div>
     </footer>
+    <script src="./src/js/mobile-menu.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="./src/js/index.js" type="module"></script>
     <script>

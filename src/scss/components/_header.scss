@@ -10,10 +10,9 @@
 }
 
 .mobile-menu {
-  display: flex;
+  @extend %center-flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 315px;
+  gap: 93px;
 }
 
 .mobile__list {

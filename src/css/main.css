@@ -73,7 +73,7 @@ body {
   padding-right: 15px;
 }
 
-.footer__link, .customers__link, .social__list, .social__link, .customers--list, .agree, .header__container {
+.footer__link, .customers__link, .social__list, .social__link, .customers--list, .agree, .mobile-menu, .header__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,10 +185,8 @@ body {
 }
 
 .mobile-menu {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 315px;
+  gap: 93px;
 }
 
 .mobile__list {

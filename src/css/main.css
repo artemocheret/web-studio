@@ -111,7 +111,7 @@ body {
   color: var(--color-text-secondary);
 }
 
-.form--button {
+.button--form {
   padding-right: 52px;
   padding-left: 52px;
 }
@@ -336,10 +336,18 @@ body {
   background: var(--color-bg-primary);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img.webp);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0px 200px 0px;
+  padding-top: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 118px;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero-background-mobile@2x.jpg);
+  }
 }
 
 .hero__container {
@@ -368,6 +376,27 @@ body {
   padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(../img/hero-background-tablet.jpg);
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero-background-tablet@2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px 280px 0px;
+    background-image: url(../img/hero-background-laptop.jpg);
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero-background-laptop@2x.jpg);
+  }
+}
 .btn__close {
   background-color: var(--color-text-secondary);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -610,6 +639,9 @@ body {
   .advantages__title {
     text-align: start;
   }
+  .advantages {
+    padding-top: 94px;
+  }
 }
 .section {
   padding-top: 95px;
@@ -662,7 +694,7 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.work__div {
+.solution__div {
   background-color: rgba(50, 47, 58, 0.8);
   width: 100%;
   height: 70px;
@@ -670,7 +702,7 @@ body {
   bottom: 0px;
 }
 
-.work__subtitle {
+.solution__subtitle {
   color: var(--color-text-secondary);
   text-align: center;
   padding-top: 25px;
@@ -692,6 +724,11 @@ body {
 .teammate__img {
   max-width: 450px;
   max-height: 460px;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .teammate__img {
+    background-image: url(../../img/teammate-ihor-laptop.jpg);
+  }
 }
 
 .teammate__name {

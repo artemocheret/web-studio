@@ -9,6 +9,11 @@
 .teammate__img {
   max-width: 450px;
   max-height: 460px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../../img/teammate-ihor-laptop.jpg);
+  }
 }
 
 .teammate__name {

@@ -230,37 +230,85 @@
           <ul class="work__list">
             <li class="work__item" data-aos="fade-right">
               <div class="solution">
-                <img
-                  class="solution__img"
-                  src="./src/img/work-desktop.jpg"
-                  alt="програмування"
-                />
-                <div class="solution__div">
-                  <h3 class="solution__subtitle">Десктопні додатки</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/work-desktop.webp    1x,
+                      ./src/img/work-desktop@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/img/work-desktop.jpg    1x,
+                      ./src/img/work-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="solution__img"
+                    src="./src/img/work-desktop.jpg"
+                    alt="програмування"
+                  />
+                </picture>
+                <div class="solution__label">
+                  <h3 class="solution__label-text">Десктопні додатки</h3>
                 </div>
               </div>
             </li>
             <li class="work__item" data-aos="fade-right" data-aos-delay="100">
               <div class="solution">
-                <img
-                  class="solution__img"
-                  src="./src/img/work-mobile.jpg"
-                  alt="ноутбук"
-                />
-                <div class="solution__div">
-                  <h3 class="solution__subtitle">Мобільні додатки</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/work-mobile.webp    1x,
+                      ./src/img/work-mobile@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/img/work-mobile.jpg    1x,
+                      ./src/img/work-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="solution__img"
+                    src="./src/img/work-mobile.jpg"
+                    alt="ноутбук"
+                  />
+                </picture>
+                <div class="solution__label">
+                  <h3 class="solution__label-text">Мобільні додатки</h3>
                 </div>
               </div>
             </li>
             <li class="work__item" data-aos="fade-right" data-aos-delay="200">
               <div class="solution">
-                <img
-                  class="solution__img"
-                  src="./src/img/work-design.jpg"
-                  alt="планшет"
-                />
-                <div class="solution__div">
-                  <h3 class="solution__subtitle">Дизайнерські рішення</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/work-design.webp    1x,
+                      ./src/img/work-design@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/img/work-design.jpg    1x,
+                      ./src/img/work-design@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="solution__img"
+                    src="./src/img/work-design.jpg"
+                    alt="планшет"
+                  />
+                </picture>
+                <div class="solution__label">
+                  <h3 class="solution__label-text">Дизайнерські рішення</h3>
                 </div>
               </div>
             </li>
@@ -280,6 +328,11 @@
                     alt="Ігор"
                     width="270"
                     height="260"
+                    srcset="
+                      ./src/img/teammate-ihor-mobile.jpg    450w,
+                      ./src/img/teammate-ihor-mobile@2x.jpg 900w
+                    "
+                    sizes="(max-width:768px) 450px, 100vw"
                   />
                 </div>
                 <h3 class="teammate__name">Ігор Дем'яненко</h3>
@@ -327,6 +380,11 @@
                     alt="Ольга"
                     width="270"
                     height="260"
+                    srcset="
+                      ./src/img/teammate-olha-mobile.jpg    450w,
+                      ./src/img/teammate-olha-mobile@2x.jpg 900w
+                    "
+                    sizes="(max-width:768px) 450px, 100vw"
                   />
                 </div>
                 <h3 class="teammate__name">Ольга Рєпіна</h3>
@@ -374,6 +432,11 @@
                     alt="mykhola"
                     width="270"
                     height="260"
+                    srcset="
+                      ./src/img/teammate-mykhola-mobile.jpg    450w,
+                      ./src/img/teammate-mykhola-mobile@2x.jpg 900w
+                    "
+                    sizes="(max-width:768px) 450px, 100vw"
                   />
                 </div>
                 <h3 class="teammate__name">Микола Тарасов</h3>
@@ -414,14 +477,19 @@
             </li>
             <li class="team__item" data-aos="zoom-in">
               <article class="teammate">
-                <div class="teammate__photo">
-                  <img
-                    class="teammate__img"
-                    src="./src/img/teammate-mykhaylo-mobile.jpg "
-                    alt="muhaylo"
-                    width="270"
-                    height="260"
-                  />
+                <div class="teammate__photo">    
+                    <img
+                      class="teammate__img"
+                      src="./src/img/teammate-mykhaylo-mobile.jpg "
+                      alt="muhaylo"
+                      width="270"
+                      height="260"
+                      srcset="
+                        ./src/img/teammate-mykhaylo-mobile.jpg    450w,
+                        ./src/img/teammate-mykhaylo-mobile@2x.jpg 900w
+                      "
+                      sizes="(max-width:768px) 450px, 100vw"
+                    />
                 </div>
                 <h3 class="teammate__name">Михайло Єрмаков</h3>
                 <p class="teammate__role">UI Designer</p>

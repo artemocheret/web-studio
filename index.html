@@ -25,61 +25,63 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="#">Web<span class="logo__part">Studio</span></a>
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu">
           <button class="mobile-menu__btn menu-btn" data-menu-btn>
             <span class="menu-btn__line"></span>
           </button>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" data-mobile-link href="./index.html"
-                  >Студія
-                </a>
-              </li>
-              <li class="nav__item">
+          <div class="mobile-menu__wrapp" data-menu>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" data-mobile-link href="./index.html"
+                    >Студія
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link"
+                    data-mobile-link
+                    href="./src/pages/portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" data-mobile-link href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts__item">
                 <a
-                  class="nav__link"
+                  class="contacts__link"
                   data-mobile-link
-                  href="./src/pages/portfolio.html"
-                  >Портфоліо</a
+                  href="mailto:info@devstudio.com"
+                  ><svg class="contacts__icon">
+                    <use href="./src/img/icons.svg#icon-envelope" />
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
-              <li class="nav__item">
-                <a class="nav__link" data-mobile-link href="#">Контакти</a>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link contacts__link--tel"
+                  data-mobile-link
+                  href="tel:+380961111111"
+                >
+                  <svg class="contacts__icon contacts__icon--tel">
+                    <use href="./src/img/icons.svg#icon-smartphone" />
+                  </svg>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a
-                class="contacts__link"
-                data-mobile-link
-                href="mailto:info@devstudio.com"
-                ><svg class="contacts__icon">
-                  <use href="./src/img/icons.svg#icon-envelope" />
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a
-                class="contacts__link"
-                data-mobile-link
-                href="tel:+380961111111"
-              >
-                <svg class="contacts__icon contacts__icon--tel">
-                  <use href="./src/img/icons.svg#icon-smartphone" />
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile__list">
-            <li class="mobile__item">Instagram</li>
-            <li class="mobile__item">Twitter</li>
-            <li class="mobile__item">Facebook</li>
-            <li class="mobile__item">LinkedIn</li>
-          </ul>
+            <ul class="mobile__list">
+              <li class="mobile__item">Instagram</li>
+              <li class="mobile__item">Twitter</li>
+              <li class="mobile__item">Facebook</li>
+              <li class="mobile__item">LinkedIn</li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -666,7 +668,7 @@
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer___item">
+              <li class="footer__item">
                 <a class="footer__tel" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >

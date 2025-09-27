@@ -3,7 +3,7 @@
 }
 .nav__list {
   display: flex;
-  gap: 50px;
+  gap: 32px;
 }
 
 .nav__link {
@@ -38,9 +38,3 @@
   opacity: 1;
 }
 
-
-@media (max-width:767px) {
-  .nav {
-    display: none;
-  }
-}

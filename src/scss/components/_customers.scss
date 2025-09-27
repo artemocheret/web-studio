@@ -3,8 +3,8 @@
   border-radius: 4px;
   padding-top: 16px;
   padding-bottom: 16px;
-  @extend %center-flex ;
-  @include transition-set (color, border, border-radius);
+  @extend %center-flex;
+  @include transition-set(color, border, border-radius);
 }
 
 .customers__item {
@@ -25,5 +25,17 @@
   fill: #afb1b8;
   width: 106px;
   height: 60px;
-  @include transition-set (fill);
+  @include transition-set(fill);
+}
+
+@media (max-width: 480px) {
+  .customers__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .customers__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }

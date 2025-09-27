@@ -2,7 +2,6 @@
   font-weight: 500;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
 }
 
 .contacts__link {
@@ -36,14 +35,6 @@
   fill: var(--color-text-primary);
   @include transition-set (fill);
 }
-
-
-@media (max-width:768px) {
-  .contacts {
-    display: none;
-  }
-}
-
 
 @media (min-width:768px) {
   .contacts {

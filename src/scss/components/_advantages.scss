@@ -67,4 +67,8 @@
   .advantages {
     padding-top: 94px;
   }
+
+  .advantages__item {
+    flex-basis: calc((100% - 30px) /2);
+  }
 }

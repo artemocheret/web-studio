@@ -417,6 +417,11 @@ body {
   padding-top: 30px;
 }
 
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
 @media (min-width: 768px) {
   .hero {
     background-image: url(../img/hero-background-tablet.jpg);
